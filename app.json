@@ -1,0 +1,10 @@
+{
+    "name": "SUTD Hostel Hunt Bot",
+    "description": "A Telegram bot for SUTD Hostel Hunt 2020",
+    "repository": "https://github.com/jamestiotio/hostelhunt",
+    "keywords": [
+        "python-telegram-bot",
+        "firestore",
+        "heroku"
+    ]
+}

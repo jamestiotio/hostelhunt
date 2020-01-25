@@ -1,0 +1,83 @@
+{
+  "participants": {
+    "100000000": {
+      "name": "Johnny Bananapericarp",
+      "student_id": "1000000",
+      "last_hint": ""
+    }
+  },
+  "tokens": {
+    "blue": {
+      "RHVua2luJyBEb251dHMh": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      },
+      "VWdseUZvb2QgSWNlIENyZWFtISEh": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      },
+      "TW92aWUgVGlja2V0ISEh": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      },
+      "R29uZyBDaGEgQnViYmxlIFRlYSEh": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      }
+    },
+    "green": {
+      "6e557b5177417c02af6b": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      },
+      "7b044af7537cfdd1e60a710d5d8c": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      }
+    },
+    "red": {
+      "a99c451b18de308cbdee": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      }
+    },
+    "yellow": {
+      "af538ff9992f4fd7f4ef": {
+        "claimant": "",
+        "claimed": "false",
+        "first_hint": "",
+        "second_hint": "",
+        "third_hint": "",
+        "hash": ""
+      }
+    }
+  }
+}
