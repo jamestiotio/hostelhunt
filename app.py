@@ -126,7 +126,7 @@ def start(bot, update):
     user_id = update.effective_user.id
 
     msg = ('Hi! I am the official bot for SUTD Hostel Hunt 2020. '
-           'Collaborate in teams of 5 to collect 4 tokens of the same colour to exchange for prizes!')
+           'Collaborate in teams of 4 to collect 4 tokens of the same colour to exchange for prizes!')
 
     rules = ('These are the rules for SUTD Hostel Hunt 2020:\r\n\r\n'
              '1. Please note that tokens will only be hidden in safe and accessible areas '
@@ -183,8 +183,9 @@ def begin_register(bot, update):
 
 def check_auth(bot, update):
     user_id = update.effective_user.id
+    first_name = update.message.from_user.first_name
     if update.message.text == SUTD_AUTH:
-        pb.add_user(user_id)
+        pb.add_user(user_id, first_name)
         bot.send_message(
             chat_id=user_id, text='Please enter your student ID for registration.')
 
@@ -307,7 +308,9 @@ def verify_hash(bot, update, args=[]):
         auth_hash = args[0]
 
         if auth_hash in pb.get_all_hash():
-            bot.send_message(user_id, text='Hash exists in database.')
+            name = pb.get_name(user_id)
+            student_id = pb.get_student_id(user_id)
+            bot.send_message(user_id, text=f'Hash exists in database.\r\n\r\nName: {name}\r\nStudent ID: {student_id}')
 
         else:
             bot.send_message(user_id, text='Hash does not exist in database.')

@@ -26,12 +26,24 @@ class FirebaseConnector:
 
         return [user.id for user in current_users]
 
-    def add_user(self, user_id):
+    def add_user(self, user_id, first_name):
         self.db.collection(u'participants').document(f'{user_id}').set({
             u'last_hint': None,
-            u'name': '',
+            u'name': f'{first_name}',
             u'student_id': 0
         })
+    
+    def get_name(self, user_id):
+        user = self.db.collection(u'participants').document(f'{user_id}')
+
+        try:
+            return user.get().to_dict()['name']
+            
+        except TypeError as e:
+            if len(e.args) > 0 and e.args[0] == "'NoneType' object is not subscriptable":
+                return 0
+            else:
+                raise e
 
     def get_all_current_student_id(self):
         student_ids = []
