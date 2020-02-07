@@ -184,7 +184,7 @@ def begin_register(bot, update):
 def check_auth(bot, update):
     user_id = update.effective_user.id
     first_name = update.message.from_user.first_name
-    if update.message.text == SUTD_AUTH:
+    if update.message.text in SUTD_AUTH:
         pb.add_user(user_id, first_name)
         bot.send_message(
             chat_id=user_id, text='Please enter your student ID for registration.')

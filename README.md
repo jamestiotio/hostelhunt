@@ -23,7 +23,7 @@ Several hidden administrative commands with restricted access are also available
   "env": {
     "ADMIN_LIST": "[<user-id-1>, <user-id-2>, ...]",
     "TELEGRAM_TOKEN": "<id>:<token>",
-    "SUTD_AUTH": "<group-leader-token>",
+    "SUTD_AUTH": "['<group-leader-1-token>', '<group-leader-2-token>', ...]",
     "MASTER_TOKEN": "<user-id>",
     "TZ": "Asia/Singapore",
     "WEBHOOK_URL": "https://<app-name>.herokuapp.com/",
