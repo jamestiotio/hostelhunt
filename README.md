@@ -46,4 +46,4 @@ More details on the bot will be elaborated here soon!
 
 ## Acknowledgements
 
-Credit to [kenghin](https://t.me/kenghin) for the initial version of this SUTD Hostel Hunt Telegram Bot. I changed the MySQL parts to implement Firebase connectivity instead, as well as improved a few features of the bot and added a few more comments for code clarity.
+Credits to [@2manslkh](https://github.com/2manslkh) for the initial version of this SUTD Hostel Hunt Telegram Bot. I changed the MySQL parts to implement Firebase connectivity instead, as well as improved a few features of the bot and added a few more comments for code clarity.
